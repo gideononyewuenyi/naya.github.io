@@ -12,10 +12,6 @@
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
@@ -25,7 +21,11 @@
     justify-content: center;
     align-items: center;
     padding: 1em 0;
-    background-color: #1a2a6c; /* You can adjust the background color as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1000;
   }
 
   .nav-logo {
@@ -36,6 +36,7 @@
 
   .header-text {
     font-size: 4em;
+    margin-top: 2.5em; /* Adjusted to account for fixed navbar */
     margin-bottom: 0.5em;
     font-weight: 400; /* Regular font weight for header */
   }
@@ -69,7 +70,6 @@
   }
 
   .background-wave {
-    /* Placeholder for the background wave graphic */
     position: absolute;
     bottom: 0;
     left: 0;
